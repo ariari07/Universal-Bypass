@@ -537,15 +537,6 @@ if(document instanceof HTMLDocument)
 			if(document.querySelector(".captcha_loader .progress-bar"))
 				document.querySelector(".captcha_loader .progress-bar").setAttribute("aria-valuenow","100")
 		})
-		domainBypass("stealive.club",()=>{
-			if(document.getElementById("counter"))
-				document.getElementById("counter").innerHTML="0"
-		})
-		hrefBypass(/((binerfile|pafpaf)\\.info)|(kurosafety\\.menantisenja\\.com)/,()=>{//KuroSafe
-			let b=document.querySelector("#mybutton[href]")
-			if(b)
-				safelyNavigate(b.href)
-		})
 		domainBypass("gotoo.loncat.in",()=>{
 			let a=document.querySelector("a[href^='http://gotoo.loncat.in/go.php?open=']")
 			if(a)
